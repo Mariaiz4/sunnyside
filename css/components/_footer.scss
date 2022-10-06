@@ -1,0 +1,58 @@
+@import '../abstract/variables';
+
+footer{
+    background-color: $light-green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2.4rem;
+    padding-block: 8rem;
+
+    nav{
+        display: flex;
+        gap: 3.2rem;
+        a{  
+            text-decoration: none;
+            font-size: $text-size-200;
+            font-family: $text-family-secundary;
+            color: $dark-green;
+        }
+
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 3.2rem;
+
+        img{
+            width: 3.2rem;
+        };
+    }
+    
+
+    
+
+    
+}
+
+@media(min-width:800px){
+    footer{
+        background-color: $light-green;
+        img{
+            width: 12.4rem;
+            height: 2.4rem;
+        }
+       ul{
+        
+        li{
+            img{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+       }
+    }
+
+    
+}
